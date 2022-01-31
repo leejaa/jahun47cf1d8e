@@ -42,6 +42,7 @@ allprojects {
         maven {
             url 'https://naver.jfrog.io/artifactory/maven/'
         }
+        maven { url 'https://maven.google.com' }
         maven { url 'https://www.jitpack.io' }
     }
 }
