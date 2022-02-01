@@ -11,7 +11,6 @@
 
 import React from 'react';
 import {Dimensions, View} from 'react-native';
-
 import NaverMapView, {Marker, Path} from 'react-native-nmap';
 import usePermissions from './hooks/usePermission';
 

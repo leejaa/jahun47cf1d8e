@@ -9,7 +9,7 @@
  * @format
  */
 
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {
   Alert,
   Dimensions,
@@ -21,6 +21,7 @@ import {
 } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import ImageResizer from 'react-native-image-resizer';
+import SplashScreen from 'react-native-splash-screen';
 
 const Picture = () => {
   const [image, setImage] =
@@ -96,6 +97,10 @@ const Picture = () => {
     //   }
     // }
   }, [image]);
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   return (
     <View>
